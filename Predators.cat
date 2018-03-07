@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="878a-bf2d-954a-ff9a" name="Predators" revision="1" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="878a-bf2d-954a-ff9a" name="Predators" revision="2" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="6f3b-91f7-dd69-e74b" name="Perfect Warriors" hidden="false">
@@ -207,7 +207,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="3cc6-c742-4381-a4c4" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="61ee-ba28-cd28-c37b" type="rule">
+        <infoLink id="3cc6-c742-4381-a4c4" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="6573-d197-2eed-7924" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -518,6 +518,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="c21f-a080-c8e4-4d64" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="180.0"/>
@@ -705,6 +713,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="3cdf-55e6-5dcd-99bd" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="140.0"/>
@@ -884,6 +900,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="8bff-c6c0-219b-1726" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="130.0"/>
@@ -984,7 +1008,7 @@
           <infoLinks/>
           <modifiers/>
         </infoLink>
-        <infoLink id="5a28-4446-2ff4-edcb" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="61ee-ba28-cd28-c37b" type="rule">
+        <infoLink id="5a28-4446-2ff4-edcb" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="6573-d197-2eed-7924" type="rule">
           <profiles/>
           <rules/>
           <infoLinks/>
@@ -1456,6 +1480,14 @@
               </constraints>
               <categoryLinks/>
             </entryLink>
+            <entryLink id="256f-ce19-acc0-ff4a" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="40.0"/>
@@ -1632,7 +1664,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="9af0-f279-2d8b-2968" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="60.0"/>
           </costs>
@@ -1868,8 +1909,8 @@
           <infoLinks/>
           <modifiers/>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b57-9a1a-1741-4e24" type="min"/>
-            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f151-06c9-d1f4-1ae9" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b57-9a1a-1741-4e24" type="min"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f151-06c9-d1f4-1ae9" type="max"/>
           </constraints>
           <categoryLinks/>
           <selectionEntries/>
@@ -2035,6 +2076,215 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="61d5-43e8-7c1c-ad85" type="max"/>
               </constraints>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="130.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7fb5-7110-4111-072f" name="Soldier Squad Commander" hidden="false" collective="false" type="model">
+          <profiles>
+            <profile id="0b42-8926-79e9-a950" name="Soldier" hidden="false" profileTypeId="dc7a-aa36-153f-b01a" profileTypeName="Infantry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <characteristics>
+                <characteristic name="SP" characteristicTypeId="9db2-e73d-81c4-7e5e" value="5"/>
+                <characteristic name="CC" characteristicTypeId="8dd8-6dd1-452d-e93d" value="15/2"/>
+                <characteristic name="RS" characteristicTypeId="a1a2-a898-3ad0-0eed" value="15"/>
+                <characteristic name="ST" characteristicTypeId="5f3f-d57f-4147-a808" value="11"/>
+                <characteristic name="CON" characteristicTypeId="ff87-4cb9-ec9b-2197" value="14"/>
+                <characteristic name="WP" characteristicTypeId="db0e-37dd-158d-c429" value="15"/>
+                <characteristic name="LD" characteristicTypeId="2186-73a8-0c4c-e706" value="15"/>
+                <characteristic name="W" characteristicTypeId="0ee7-d56e-e406-04e8" value="4"/>
+                <characteristic name="A" characteristicTypeId="f927-63b8-5afd-6ce1" value="24(12)"/>
+                <characteristic name="SZ" characteristicTypeId="1a02-1e97-71e4-e658" value="1"/>
+                <characteristic name="COH" characteristicTypeId="05da-39a2-c9de-de6f" value="15&quot;"/>
+                <characteristic name="PTS" characteristicTypeId="1b37-c4b7-2c11-f4be" value="130"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b0-da05-9ab7-eb76" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d090-ffba-571f-3eb0" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d2df-7062-9211-cb0e" name="Ranged Weapon" hidden="false" collective="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e57-7fdf-7616-2ebc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8d0-a266-c21b-29ab" type="min"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries>
+                <selectionEntry id="cff4-3056-eabf-c567" name="Blazer" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="6754-af33-8099-d417" name="Blazer" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
+                        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="15"/>
+                        <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
+                        <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="R"/>
+                        <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Armour-Piercing(7), Deadly"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f003-56c4-56e1-7116" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ec2f-2461-8528-01c3" name="Hydra MMS" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="258b-6ba3-3f35-51dc" name="Hydra MMS" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24/SE"/>
+                        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="11"/>
+                        <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
+                        <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="ML"/>
+                        <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Concussive(2), Mortar, Pinning"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3547-f13c-e13c-14a6" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="6ae1-5cdd-8980-df34" name="2x Blazer" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="eb9c-3847-5471-a8c8" name="Blazer" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
+                        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="15"/>
+                        <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
+                        <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="R"/>
+                        <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Armour-Piercing(7), Deadly"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="ba39-edbb-4aa1-d8a0" name="Paired Weapons(Blazer)" hidden="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <description>Paired Weapons (X) - The model can use up to two of its equipped weapons of the (X) type in the same action. In ranged combat, both weapons have the same primary target. (X) can be a specific weapon, e.g. (combat knife), or a weapon type, e.g. (HG) or (CC).</description>
+                    </rule>
+                  </rules>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="049a-d5b4-59c8-bd00" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="30.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="2f09-950d-30d0-11db" name="2x Hydra MMS" hidden="false" collective="false" type="upgrade">
+                  <profiles>
+                    <profile id="2185-e7e0-83a1-9ebe" name="Hydra MMS" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <characteristics>
+                        <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24/SE"/>
+                        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="11"/>
+                        <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
+                        <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="ML"/>
+                        <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Concussive(2), Mortar, Pinning"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <rules>
+                    <rule id="16a4-b4aa-6380-4f9b" name="Paired Weapons(Hydra MMS)" hidden="false">
+                      <profiles/>
+                      <rules/>
+                      <infoLinks/>
+                      <modifiers/>
+                      <description>Paired Weapons (X) - The model can use up to two of its equipped weapons of the (X) type in the same action. In ranged combat, both weapons have the same primary target. (X) can be a specific weapon, e.g. (combat knife), or a weapon type, e.g. (HG) or (CC).</description>
+                    </rule>
+                  </rules>
+                  <infoLinks/>
+                  <modifiers/>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c40d-850c-dd98-eaec" type="max"/>
+                  </constraints>
+                  <categoryLinks/>
+                  <selectionEntries/>
+                  <selectionEntryGroups/>
+                  <entryLinks/>
+                  <costs>
+                    <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="30.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups/>
+              <entryLinks/>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="0dba-87a2-a7a8-560c" name="Close Combat Weapons" hidden="false" targetId="ddd3-ef4a-e6ec-5f22" type="selectionEntryGroup">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="665e-2fdb-1495-663f" type="max"/>
+              </constraints>
+              <categoryLinks/>
+            </entryLink>
+            <entryLink id="93b0-aed7-f463-7e7b" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
               <categoryLinks/>
             </entryLink>
           </entryLinks>
@@ -3142,6 +3392,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="11d7-4279-2399-3986" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="190.0"/>
@@ -3389,7 +3647,16 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="20e3-1f3d-9bc2-ab72" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="75.0"/>
           </costs>
@@ -3572,31 +3839,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d5b-e444-bf4b-08c9" type="max"/>
           </constraints>
           <categoryLinks/>
-          <selectionEntries>
-            <selectionEntry id="c738-32d4-ebd8-c4d1" name="Laser Trap" hidden="false" collective="false" type="upgrade">
-              <profiles/>
-              <rules/>
-              <infoLinks>
-                <infoLink id="d6bd-8a03-58f4-b5e8" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="61ee-ba28-cd28-c37b" type="rule">
-                  <profiles/>
-                  <rules/>
-                  <infoLinks/>
-                  <modifiers/>
-                </infoLink>
-              </infoLinks>
-              <modifiers/>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c731-263e-f616-cb3e" type="max"/>
-              </constraints>
-              <categoryLinks/>
-              <selectionEntries/>
-              <selectionEntryGroups/>
-              <entryLinks/>
-              <costs>
-                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
+          <selectionEntries/>
           <selectionEntryGroups>
             <selectionEntryGroup id="7fe4-f946-830e-f1df" name="Weapons" hidden="false" collective="false">
               <profiles/>
@@ -3629,7 +3872,22 @@
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
-          <entryLinks/>
+          <entryLinks>
+            <entryLink id="05bf-637f-17f1-aab2" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="set" field="547a-ce3f-3831-bc09" value="0.0">
+                  <repeats/>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints/>
+              <categoryLinks/>
+            </entryLink>
+          </entryLinks>
           <costs>
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="70.0"/>
           </costs>
@@ -4310,6 +4568,45 @@
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="15.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="6954-46c6-9ea3-8709" name="Scimitar" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks>
+            <infoLink id="17c2-2740-e5e6-c4ba" name="Scimitar" hidden="false" targetId="84fa-643c-72cf-1473" type="profile">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+            </infoLink>
+          </infoLinks>
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <repeats/>
+              <conditions>
+                <condition field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c9dd-8f7e-6d41-d25c" type="equalTo"/>
+              </conditions>
+              <conditionGroups/>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d911-9ad3-4e48-941b" type="max"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink id="fe25-c4ee-246c-2825" name="New CategoryLink" hidden="false" targetId="b74a-5c27-527d-9d93" primary="false">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+            </categoryLink>
+          </categoryLinks>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="5.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
         <selectionEntryGroup id="0aa7-f79f-7b9b-b901" name="Primary Weapon" hidden="false" collective="false" defaultSelectionEntryId="946e-7603-0562-1e29">
@@ -4638,7 +4935,9 @@
           <selectionEntries/>
           <selectionEntryGroups/>
           <entryLinks/>
-          <costs/>
+          <costs>
+            <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="62f0-6531-a664-b4f7" name="Wrist Blades" hidden="false" collective="false" type="upgrade">
           <profiles/>
@@ -5494,18 +5793,6 @@
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
-    <rule id="61ee-ba28-cd28-c37b" name="Laser Traps(1/1/14, Deadly)" hidden="false">
-      <profiles/>
-      <rules/>
-      <infoLinks/>
-      <modifiers/>
-      <description>Traps (X/Y/Z) - After deployment, but before infiltrators have been placed, you may place your traps on the board. A trap is always represented by (X) 30mm markers. Place them anywhere, but not within 12” of an enemy model. If an enemy model moves or activates within a certain distance to the trap (Y), it goes off! Immediately suspend play and roll: 
-On a roll of 1-15, remove the trap from the board and the tripping model receives the described hit (Z). 
-On a 16-20, nothing happens. Leave the trap in play. 
-After resolving the trap, the surviving model may continue its activation.
-If a trap goes off and there are multiple targets, the trap´s owner chooses the order in which models are affected. 
-</description>
-    </rule>
     <rule id="76a1-a2c9-7503-bdaf" name="Self-Destruct System" hidden="false">
       <profiles/>
       <rules/>

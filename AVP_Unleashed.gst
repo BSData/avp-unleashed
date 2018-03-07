@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="639c-10b0-0bec-b836" name="AVP: Unleashed" revision="1" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="639c-10b0-0bec-b836" name="AVP: Unleashed" revision="2" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -712,6 +712,14 @@
           <constraints/>
           <categoryLinks/>
         </entryLink>
+        <entryLink id="1b90-2fa0-682b-931f" name="Laser Trap" hidden="false" targetId="3823-a241-6c90-9bd2" type="selectionEntry">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints/>
+          <categoryLinks/>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="65.0"/>
@@ -1297,6 +1305,29 @@
       <entryLinks/>
       <costs>
         <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="20.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3823-a241-6c90-9bd2" name="Laser Trap" hidden="false" collective="false" type="upgrade">
+      <profiles/>
+      <rules/>
+      <infoLinks>
+        <infoLink id="a5ea-1946-ff98-7faf" name="Laser Traps(1/1/14, Deadly)" hidden="false" targetId="6573-d197-2eed-7924" type="rule">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+        </infoLink>
+      </infoLinks>
+      <modifiers/>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b79-54ed-d9a7-25f7" type="max"/>
+      </constraints>
+      <categoryLinks/>
+      <selectionEntries/>
+      <selectionEntryGroups/>
+      <entryLinks/>
+      <costs>
+        <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="5.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -2690,6 +2721,18 @@ If a trap goes off and there are multiple targets, the trap´s owner chooses the
       <infoLinks/>
       <modifiers/>
       <description>This model immune to Implant. RES(1): Spend AP(2). Make a Regeneration (12) test.</description>
+    </rule>
+    <rule id="6573-d197-2eed-7924" name="Laser Traps(1/1/14, Deadly)" hidden="false">
+      <profiles/>
+      <rules/>
+      <infoLinks/>
+      <modifiers/>
+      <description>Traps (X/Y/Z) - After deployment, but before infiltrators have been placed, you may place your traps on the board. A trap is always represented by (X) 30mm markers. Place them anywhere, but not within 12” of an enemy model. If an enemy model moves or activates within a certain distance to the trap (Y), it goes off! Immediately suspend play and roll: 
+On a roll of 1-15, remove the trap from the board and the tripping model receives the described hit (Z). 
+On a 16-20, nothing happens. Leave the trap in play. 
+After resolving the trap, the surviving model may continue its activation.
+If a trap goes off and there are multiple targets, the trap´s owner chooses the order in which models are affected. 
+</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
