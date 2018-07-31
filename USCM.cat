@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="2" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="4" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="ae5b-21f6-eb28-ec64" name="Well-Trained Soldiers" hidden="false">
@@ -2054,6 +2054,7 @@
               <modifiers/>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b16d-96f1-0f8e-fe26" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8110-4c62-1719-9b37" type="min"/>
               </constraints>
               <categoryLinks/>
               <selectionEntries>
@@ -4699,25 +4700,17 @@
         <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Armour-Piercing(5), Critical Force(2)"/>
       </characteristics>
     </profile>
-    <profile id="a6bb-c3b0-d69d-b626" name="M90 Minigun" hidden="false" profileTypeId="69ff-8e30-647f-0835" profileTypeName="Vehicle">
+    <profile id="a6bb-c3b0-d69d-b626" name="M90 Minigun" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
       <profiles/>
       <rules/>
       <infoLinks/>
       <modifiers/>
       <characteristics>
-        <characteristic name="SP" characteristicTypeId="3d64-19d9-c140-f3c2"/>
-        <characteristic name="CC" characteristicTypeId="c5ce-8266-81a1-3b22"/>
-        <characteristic name="RS" characteristicTypeId="2449-66df-7dc8-fb0f"/>
-        <characteristic name="WP" characteristicTypeId="ed65-33f8-601a-60f7"/>
-        <characteristic name="LD" characteristicTypeId="3fb5-dad5-a441-ec28"/>
-        <characteristic name="HULL" characteristicTypeId="e459-2a09-f6a4-5d56"/>
-        <characteristic name="WPNS" characteristicTypeId="0d7a-4494-01c9-424c"/>
-        <characteristic name="LEGS" characteristicTypeId="f4a6-4f0b-6075-23b0"/>
-        <characteristic name="ENG" characteristicTypeId="da22-92fc-ab52-ecb7"/>
-        <characteristic name="A-REAR" characteristicTypeId="1627-198e-001c-8872"/>
-        <characteristic name="SZ" characteristicTypeId="2021-cb5b-54b1-82b3"/>
-        <characteristic name="COH" characteristicTypeId="ae91-11e5-e284-db0f"/>
-        <characteristic name="PTS" characteristicTypeId="8be6-7199-1e47-dafe"/>
+        <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
+        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="12"/>
+        <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
+        <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="H"/>
+        <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="Pinning, RES(1): ROA(+2)"/>
       </characteristics>
     </profile>
     <profile id="07bc-1178-2a92-3fb4" name="M37A2 Pump Shotgun" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
