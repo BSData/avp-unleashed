@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="4" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="5" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="ae5b-21f6-eb28-ec64" name="Well-Trained Soldiers" hidden="false">
@@ -239,7 +239,15 @@
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="d9f6-13bc-ea9c-edf7" value="S">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="81b0-6849-c34f-ec55" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d87-fb9b-5872-f4b8" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="9dc3-e38b-4a47-4427" name="Crackshot(1)" hidden="false" targetId="55c7-7988-dd05-8444" type="rule">
               <profiles/>
@@ -647,6 +655,35 @@
               <costs>
                 <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="0d87-fb9b-5872-f4b8" name="High-Powered Scope" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="81b0-6849-c34f-ec55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7501-6d3c-972f-0c12" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="81b0-6849-c34f-ec55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf1-e286-832d-e0b0" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e528-1750-7854-6c33" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -1755,6 +1792,35 @@
                 <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="7c8e-12cf-8235-e46c" name="High-Powered Scope" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="760d-0368-3f6a-e7e6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5f50-3642-dfa2-cdba" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="760d-0368-3f6a-e7e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="daaa-6320-7cc6-03bb" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f14-2194-f054-6b94" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
+            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
           <entryLinks/>
@@ -2467,6 +2533,19 @@
             <characteristic name="PTS" characteristicTypeId="1b37-c4b7-2c11-f4be" value="70"/>
           </characteristics>
         </profile>
+        <profile id="9ba7-3cec-7137-9023" name="M41AE2 Heavy Pulse Rifle" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <characteristics>
+            <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
+            <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="13"/>
+            <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="2"/>
+            <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="H"/>
+            <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="RES(1): Short-Ranged Burst, Strafe"/>
+          </characteristics>
+        </profile>
       </profiles>
       <rules>
         <rule id="3895-f765-1e14-e33f" name="I Love The Corps!" hidden="false">
@@ -2640,7 +2719,15 @@
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="d9f6-13bc-ea9c-edf7" value="S">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="14aa-c44a-5019-4c5b" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07bb-e19a-241e-ac2c" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </infoLink>
               </infoLinks>
               <modifiers/>
@@ -2924,7 +3011,15 @@
                   <profiles/>
                   <rules/>
                   <infoLinks/>
-                  <modifiers/>
+                  <modifiers>
+                    <modifier type="set" field="d9f6-13bc-ea9c-edf7" value="S">
+                      <repeats/>
+                      <conditions>
+                        <condition field="selections" scope="fb3b-5736-783a-8c90" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07bb-e19a-241e-ac2c" type="greaterThan"/>
+                      </conditions>
+                      <conditionGroups/>
+                    </modifier>
+                  </modifiers>
                 </infoLink>
               </infoLinks>
               <modifiers/>
@@ -3180,7 +3275,7 @@
               <selectionEntryGroups/>
               <entryLinks/>
               <costs>
-                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="15.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3698,7 +3793,15 @@
               <profiles/>
               <rules/>
               <infoLinks/>
-              <modifiers/>
+              <modifiers>
+                <modifier type="set" field="d9f6-13bc-ea9c-edf7" value="S">
+                  <repeats/>
+                  <conditions>
+                    <condition field="selections" scope="8f43-7216-bbe3-9fce" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="33d9-c6eb-fd25-26f5" type="greaterThan"/>
+                  </conditions>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
             </infoLink>
             <infoLink id="00f7-e31d-40f5-2eaf" name="Serrated Combat Knife" hidden="false" targetId="e889-9d7e-e8d2-83b8" type="profile">
               <profiles/>
@@ -4016,6 +4119,35 @@
               <costs>
                 <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
               </costs>
+            </selectionEntry>
+            <selectionEntry id="33d9-c6eb-fd25-26f5" name="High-Powered Scope" hidden="false" collective="false" type="upgrade">
+              <profiles/>
+              <rules/>
+              <infoLinks/>
+              <modifiers>
+                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="8f43-7216-bbe3-9fce" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="e01c-618c-3b52-d0c8" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
+                  <repeats>
+                    <repeat field="selections" scope="8f43-7216-bbe3-9fce" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60a2-c78b-adc3-ca12" repeats="1" roundUp="false"/>
+                  </repeats>
+                  <conditions/>
+                  <conditionGroups/>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d10f-9bb0-0938-e9ae" type="max"/>
+              </constraints>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs/>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -4552,6 +4684,22 @@
           <entryLinks/>
           <costs>
             <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="1.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07bb-e19a-241e-ac2c" name="High-Powered Scope" hidden="false" collective="false" type="upgrade">
+          <profiles/>
+          <rules/>
+          <infoLinks/>
+          <modifiers/>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d5e-b62e-b8a7-095f" type="max"/>
+          </constraints>
+          <categoryLinks/>
+          <selectionEntries/>
+          <selectionEntryGroups/>
+          <entryLinks/>
+          <costs>
+            <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="2.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

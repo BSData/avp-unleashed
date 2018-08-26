@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="639c-10b0-0bec-b836" name="AVP: Unleashed" revision="2" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="639c-10b0-0bec-b836" name="AVP: Unleashed" revision="3" battleScribeVersion="2.01" authorName="John C. Smith &quot;Darth Fraggle&quot;" authorContact="johnchristophersmith@hotmail.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <profiles/>
   <rules/>
   <infoLinks/>
@@ -1123,7 +1123,7 @@
           <rules/>
           <infoLinks/>
           <modifiers/>
-          <description>Increase the range of Acid Blood to CCWR + 1”.</description>
+          <description>Acid Blood autohits a number of additional engaged enemy models chosen by this model’s controller equal to this model’s SZ(+1). Each model may only take one autohit.</description>
         </rule>
       </rules>
       <infoLinks/>
@@ -2822,7 +2822,7 @@ If a trap goes off and there are multiple targets, the trap´s owner chooses the
       <modifiers/>
       <characteristics>
         <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="1"/>
-        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="+4"/>
+        <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="+2"/>
         <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="3"/>
         <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="CC"/>
         <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="May reroll misses"/>
