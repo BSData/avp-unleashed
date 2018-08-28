@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="5" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f3ac-7cd8-8b66-6f1e" name="USCM" revision="6" battleScribeVersion="2.01" gameSystemId="639c-10b0-0bec-b836" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profiles/>
   <rules>
     <rule id="ae5b-21f6-eb28-ec64" name="Well-Trained Soldiers" hidden="false">
@@ -661,14 +661,14 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
+                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
                   <repeats>
                     <repeat field="selections" scope="81b0-6849-c34f-ec55" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="7501-6d3c-972f-0c12" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
+                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
                   <repeats>
                     <repeat field="selections" scope="81b0-6849-c34f-ec55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bbf1-e286-832d-e0b0" repeats="1" roundUp="false"/>
                   </repeats>
@@ -683,7 +683,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -1797,14 +1799,14 @@
               <rules/>
               <infoLinks/>
               <modifiers>
-                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
+                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
                   <repeats>
                     <repeat field="selections" scope="760d-0368-3f6a-e7e6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5f50-3642-dfa2-cdba" repeats="1" roundUp="false"/>
                   </repeats>
                   <conditions/>
                   <conditionGroups/>
                 </modifier>
-                <modifier type="decrement" field="547a-ce3f-3831-bc09" value="2">
+                <modifier type="increment" field="547a-ce3f-3831-bc09" value="2">
                   <repeats>
                     <repeat field="selections" scope="760d-0368-3f6a-e7e6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="daaa-6320-7cc6-03bb" repeats="1" roundUp="false"/>
                   </repeats>
@@ -1819,7 +1821,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
@@ -2533,19 +2537,6 @@
             <characteristic name="PTS" characteristicTypeId="1b37-c4b7-2c11-f4be" value="70"/>
           </characteristics>
         </profile>
-        <profile id="9ba7-3cec-7137-9023" name="M41AE2 Heavy Pulse Rifle" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
-          <profiles/>
-          <rules/>
-          <infoLinks/>
-          <modifiers/>
-          <characteristics>
-            <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
-            <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="13"/>
-            <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="2"/>
-            <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="H"/>
-            <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="RES(1): Short-Ranged Burst, Strafe"/>
-          </characteristics>
-        </profile>
       </profiles>
       <rules>
         <rule id="3895-f765-1e14-e33f" name="I Love The Corps!" hidden="false">
@@ -2780,6 +2771,34 @@
               <entryLinks/>
               <costs>
                 <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="15.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3681-cce0-57d0-ac18" name="M41AE2 Heavy Pulse Rifle" hidden="false" collective="false" type="upgrade">
+              <profiles>
+                <profile id="ec86-506b-2bd4-f01b" name="M41AE2 Heavy Pulse Rifle" hidden="false" profileTypeId="e757-f9ad-a515-2a17" profileTypeName="Weapon">
+                  <profiles/>
+                  <rules/>
+                  <infoLinks/>
+                  <modifiers/>
+                  <characteristics>
+                    <characteristic name="R" characteristicTypeId="bf81-58c8-2998-0bac" value="24"/>
+                    <characteristic name="ST" characteristicTypeId="6897-944f-c8fe-4c3c" value="13"/>
+                    <characteristic name="ROA" characteristicTypeId="230e-bcc1-5de9-c333" value="2"/>
+                    <characteristic name="TYPE" characteristicTypeId="d9f6-13bc-ea9c-edf7" value="H"/>
+                    <characteristic name="RULES" characteristicTypeId="9f21-2671-81ec-316a" value="RES(1): Short-Ranged Burst, Strafe"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules/>
+              <infoLinks/>
+              <modifiers/>
+              <constraints/>
+              <categoryLinks/>
+              <selectionEntries/>
+              <selectionEntryGroups/>
+              <entryLinks/>
+              <costs>
+                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4147,7 +4166,9 @@
               <selectionEntries/>
               <selectionEntryGroups/>
               <entryLinks/>
-              <costs/>
+              <costs>
+                <cost name="Points" costTypeId="547a-ce3f-3831-bc09" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups/>
